@@ -1,0 +1,322 @@
+/* --------------------media query max width 853px --------------- */
+@media (max-width: 1184px) {
+    /* -------hero content wraper -----  */
+    #hero{
+        width: 100%;
+        height: 90vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    #hero .container-fluid .row{
+        grid-template-columns: 1fr 40%;
+    }
+}
+@media (max-width: 1000px) {
+  /* -----------header navbar responsive------  */
+  header{
+    padding: 0 2rem;
+}
+header .container-fluid nav .logo img{
+    width:180px;
+    height: max-content;
+}
+
+/* --------hero content wrapper ------  */
+#hero .container-fluid .row .left-col h1{
+    font-size: 2.6rem;
+}
+#hero .container-fluid .row .left-col .typing{
+    font-size: 1.3rem;
+    font-weight: 600;
+}
+ /* ----------------hero content wrapper ----------------- */
+ #hero .container-fluid {
+    width: 100%;
+    padding: 0 2rem;        
+}
+/* ------------about content wrapper ------------- */
+#about .container-fluid .row{
+   
+    padding: 0 2rem;
+}
+#hero .container-fluid .row .right-col .icon_pic .html-cricle{
+    position: absolute;
+    top: 11rem;
+    right: .8rem;
+}
+/* ------------about content wrapper ------------- */
+#about .container-fluid .row{
+    grid-template-columns: 1fr 1fr;
+padding: 0 2rem;
+}
+
+/* ------------SERVICES content wrapper----------------------  */
+#services .container-fluid .row {
+    grid-template-columns: repeat(2, 1fr);
+    padding: 0 2rem;
+    row-gap: 3.2rem;
+} 
+/* ------------testimonals sec wrapper ---------------- */
+#Testimonials .container-fluid .row{
+    padding: 0 2rem;
+}
+/* ----------project contant wrapper------------- */
+#project .container-fluid .row {
+    grid-template-columns: repeat(2,1fr);
+    padding: 1.5rem 2rem;
+}
+/* ---------project contact wrapper ------------- */
+.popup .container-fluid .content-popup{
+    width: 80%;
+   
+}
+/* --------contact wrapper ----------------- */
+#contact .container-fluid .row{
+    grid-template-columns: repeat(2, 1fr);
+    padding: 1.5rem 2rem;
+}
+/* ---------client and project wrapper -------------- */
+#client-project .container-fluid .row{
+    grid-template-columns: repeat(3, 1fr);
+    margin: 0 2rem;
+}
+}
+
+
+/* --------------------media query max width 853px --------------- */
+
+@media (max-width: 853px) {
+    header .container-fluid nav .menu-bar{
+        display: block;
+        transition: .4s ease;
+    }
+    header .container-fluid nav .navbar{
+        position: fixed;
+        top: 70px;
+        left: -100%;
+        right: 0;
+        bottom: 0;
+       width: 100%;
+       height: 100vh;
+       background: var(--white);
+       display: flex;
+       flex-direction: column;
+       /* justify-content: flex-start; */
+       align-items: flex-start;
+       overflow-x: auto;
+       clip-path: polygon(0 27%, 0 64%, 0 83%, 0% 100%, 0 47%, 0% 0%);
+       transition: .4s ease;
+    }
+    header .container-fluid nav .navbar.active{
+        left: 0;
+        clip-path: polygon(100% 0, 100% 50%, 100% 100%, 0% 100%, 0 46%, 0% 0%);
+    }
+    header .container-fluid nav .navbar ul{
+        flex-direction: column;
+        width: 100%;
+        height: 100vh;
+        gap: 0;
+        align-items: flex-start;
+        padding: 0;
+    }
+    header .container-fluid nav .navbar ul li{
+        border-bottom: .1rem solid var(--eerie-black);
+        width: 100%;
+        margin: 0;
+        justify-content: flex-start;
+        height: auto;
+        padding: 1rem;       
+    }
+    header .container-fluid nav .navbar ul .dark-mode{
+       margin: 1rem;
+    }
+    header .container-fluid nav .menu-bar.active .menu:nth-child(2){
+       display: none;
+    }
+    header .container-fluid nav .menu-bar.active{
+        padding: .5rem;
+    }
+    header .container-fluid nav .menu-bar .menu{
+        transition: .4s ease;
+    }
+    header .container-fluid nav .menu-bar.active .menu:nth-child(1){
+        transform: translateY(3px) rotate(45deg);
+    }
+    header .container-fluid nav .menu-bar.active .menu:nth-child(3){
+        transform: translateY(-4px) rotate(-45deg);
+    }
+
+   /* --------------hero wrapper --------------- */
+   #hero{
+    background-position: left;
+    }
+    #hero .container-fluid .row{
+        grid-template-columns: 1fr;
+        grid-gap: 3rem;
+    }
+
+    #hero{
+        height: auto;
+        display: grid;
+        place-items: center;
+    }
+    #hero .container-fluid .row .right-col .icon_pic .css-cricle{
+        position: absolute;
+        top: 10rem;
+        left: 1rem;
+    }
+
+    /* ------------about content wrapper ------------- */
+#about .container-fluid .row{
+    grid-template-columns: 1fr;
+padding: 0 2rem;
+}
+/* --------contact wrapper ----------------- */
+#contact .container-fluid .row{
+    grid-template-columns: repeat(1, 1fr);
+    padding: 1.5rem 2rem;
+}
+  
+/* ---------client and project wrapper -------------- */
+#client-project .container-fluid .row{
+    grid-template-columns: repeat(2, 1fr);
+    margin: 0 2rem;
+}
+
+}
+
+/* --------------------media query max width  600px --------------- */
+@media (max-width: 600px) {
+    /* ----------------header conteent wrapper -------------- */
+    header{
+        padding: 0 1rem;
+    }
+
+
+    /* ----------hero content wrapper ---------------- */
+    #hero .container-fluid {
+        padding: 0 1rem;        
+    }
+    #about .container-fluid .row{
+         padding: 0 1rem;
+     }
+     /* ------------SERVICES content wrapper----------------------  */
+#services .container-fluid .row {
+    grid-template-columns: repeat(1, 1fr);
+    padding: 0 1rem;
+    row-gap: 3.2rem;
+} 
+   /* ------------testimonals sec wrapper ---------------- */
+#Testimonials .container-fluid .row{
+    padding: 0 1rem;
+}
+/* ----------project contant wrapper------------- */
+#project .container-fluid .row {
+    grid-template-columns: repeat(1,1fr);
+    padding: 1.5rem 1rem;
+}
+/* -----------contact wrapper----------  */
+#contact .container-fluid .row{
+    padding: 1.5rem 1rem;
+}
+/* ---------client and project wrapper -------------- */
+#client-project .container-fluid .row{
+    grid-template-columns: repeat(1, 1fr);
+    margin: 0 1rem;
+}
+#client-project .container-fluid .row .col-client{
+    border-bottom: .1rem solid rgba(0,0,0,.1);
+   
+}
+#client-project .container-fluid .row .col-client:nth-child(4){
+    border-bottom: none;
+}
+}
+
+/* --------------------media query max width 512px --------------- */
+@media (max-width: 512px) {
+  /* ------------------about content wrapper ----------------- */
+  #about .container-fluid .row .col-about .content .about-back{
+    padding: .6rem 0;
+    background: var(--main-color);
+    
+}
+#about .container-fluid .row .col-about .content .about-text .quistion{
+    font-size: 1rem;
+    font-weight: 500;
+    cursor: pointer;
+    color: var(--white);
+}
+
+#about .container-fluid .row .col-about .content .about-text .answer{
+    font-size: .9rem;
+    font-weight: 500;
+    color: var(--eerie-black);
+}
+/* ---------project contact wrapper ------------- */
+.popup .container-fluid .content-popup{
+    width: 98%;
+    height: 70vh;
+}
+.popup .container-fluid .content-popup .image{
+    width: 100%;
+    height: 58vh;
+    background: black;
+    cursor: pointer;
+}
+/* ------------------filte btn ----------------- */
+#project .filter_buttons .fiter-button{
+    font-size: 1rem;
+    font-weight: 500;
+    padding: .4rem 1rem;
+    }
+}
+/* --------------------media query max width 455px --------------- */
+@media (max-width: 455px) {
+    #hero .container-fluid .row .left-col .intro{
+        font-size: 1.1rem;
+        font-weight: 600;
+        color: var(--main-color);
+        position: relative;
+        margin: 0 2rem;
+    }
+    #hero .container-fluid .row .left-col h1{
+        font-size:3rem;
+        font-weight: 700;
+        cursor: pointer;
+        color: var(--eerie-black);
+    }
+    #hero .container-fluid .row .left-col .typing{
+        font-size: 1.2rem;
+        font-weight: 700;
+        color: var(--eerie-black);
+        overflow: hidden;
+    
+    }
+    /* ---------testtimonals sec wrapper ------------------ */
+    #Testimonials .container-fluid .row .col-md-12 .testswipper .swiper-slide {
+        width: 100%;
+      }
+      #Testimonials .test-text .text-heading h1{
+        font-size: 2rem;
+        font-weight: 700;
+        color: var(--eerie-black);
+    }
+}
+/* --------------------media query max width 431px --------------- */
+@media (max-width: 431px) {
+
+}
+/* --------------------media query max width 368px --------------- */
+@media (max-width: 368px) {
+    /* ---------------hro content wrapper ------------- */
+    #hero .container-fluid .row .left-col h1{
+        font-size:2.5rem;
+        font-weight: 700;
+        cursor: pointer;
+        color: var(--eerie-black);
+    }
+ 
+}
